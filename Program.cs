@@ -12,13 +12,30 @@ namespace FizzBuzz
             Console.WriteLine("Det sista talet måste vara minst lika stort som det andra och inte högre än 100.");
 
             string[] userValue = Console.ReadLine().Split(" ");
+            
             int x = Convert.ToInt32(userValue[0]);
             int y = Convert.ToInt32(userValue[1]);
             int n = Convert.ToInt32(userValue[2]);
 
-            Console.WriteLine(x);
-            Console.WriteLine(y);
-            Console.WriteLine(n);
+            for (int i = 1; i <= n; i++)
+            {
+                if (i % x == 0 && i % y == 0)
+                {
+                    Console.WriteLine("FizzBuzz");
+                }
+                else if (i % x == 0)
+                {
+                    Console.WriteLine("Fizz");
+                }
+                else if (i % y == 0)
+                {
+                    Console.WriteLine("Buzz");
+                }
+                else
+                {
+                    Console.WriteLine(i);
+                }
+            }
         }
     }
 }
