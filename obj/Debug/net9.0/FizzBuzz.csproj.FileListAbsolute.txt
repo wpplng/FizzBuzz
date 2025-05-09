@@ -12,3 +12,4 @@
 /Users/linawappling/Projekt/lexicon/FizzBuzz/obj/Debug/net9.0/FizzBuzz.pdb
 /Users/linawappling/Projekt/lexicon/FizzBuzz/obj/Debug/net9.0/FizzBuzz.genruntimeconfig.cache
 /Users/linawappling/Projekt/lexicon/FizzBuzz/obj/Debug/net9.0/ref/FizzBuzz.dll
+/Users/linawappling/Projekt/lexicon/FizzBuzz/obj/Debug/net9.0/FizzBuzz.sourcelink.json
