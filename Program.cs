@@ -12,11 +12,19 @@ namespace FizzBuzz
             Console.WriteLine("Det sista talet måste vara minst lika stort som det andra och inte högre än 100.");
 
             string[] userValue = Console.ReadLine().Split(" ");
-            int x;
-            int y;
-            int n;
 
-            // validation for correct number of numbers
+            ValidateInput(userValue, out int x, out int y, out int n);
+            RunOutput(x, y, n);
+        }
+
+        private static void ValidateInput(string[] userValue, out int x, out int y, out int n)
+        {
+            // initialize values for x, y, n so that it can be returned through out param
+            x = 0;
+            y = 0;
+            n = 0;
+
+           // validation for correct number of numbers
             if (userValue.Length != 3) {
                 Console.WriteLine("Du måste skriva in 3 heltal, separerade med mellanslag.");
                 return;
@@ -41,7 +49,10 @@ namespace FizzBuzz
                 Console.WriteLine("Vänligen uppfyll reglerna för vilka värden talen får ha, beskrivna ovan.");
                 return;
             }
+        }
 
+        private static void RunOutput(int x, int y, int n) 
+        {
             // logic for fizzbuzz
             for (int i = 1; i <= n; i++)
             {
